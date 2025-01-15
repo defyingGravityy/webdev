@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows n outline</title>
+    <style>
+        /* box-shadow: h-offset v-offset blur spread color inset */
+        /* outline: width style color; */
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow:5px 15px 5px #f8f81a;
+        }
+        .text-element{
+            text-shadow: 2px 2px 4px #f83636;
+            border: 2px solid green;
+            outline: 2px solid black;
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box.
+    </div>
+    <p class="text-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi nobis necessitatibus praesentium quae iste asperiores veritatis vitae et libero rem provident placeat eum ullam beatae in commodi, eveniet pariatur expedita accusamus quis itaque? Assumenda?</p>
+</body>
+</html>

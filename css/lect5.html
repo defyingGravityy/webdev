@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity</title>
+    <!-- specificity decided on based of value konsa type ka selector hai
+    id selector is more specific and inline style is most specific
+    Inline style >ID selector >class or attribute selector >universal selector 
+    -->
+    <style>
+        h1{
+            color:aqua;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+        h1.cred{
+            color: blue;
+        }
+        /* specificity will be 10+1=11(h1+cred) */
+    </style>
+    <!-- specificity calculations
+    1)universal selector-0
+    2)element-selector and pseudo-1
+    3)class/attribute and pseudoc classes -10
+    4)ID selector-100
+    5)Inline style-1000 
+    6)inline important-10k-->
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+        <!-- purple apply hua because of cascade algorithm ke class selector -->
+    </div>
+</body>
+</html>

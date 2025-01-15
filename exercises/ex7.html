@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry bhai solution</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <style>
+        .logo img{
+            height: 55px;
+            width: 55px;
+          background-color: aqua;  
+          
+        }
+        header div img{
+            display: flex;
+            justify-content: flex-start;
+        }
+        /* .logo img{
+            width: 80px;
+             height: 70px; 
+        */
+        nav{
+            display: flex;  
+            justify-content: space-around;  
+            align-items: center; 
+            background-color: papayawhip;
+            /* border: 2px solid black;       */
+        }
+        .right ul{
+            display: flex;
+            gap: 34px;
+        }
+        .right ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        .right ul li img{
+            height: 30px;
+            width: 40px;
+        }
+        .first{
+            display: flex;
+            /* background-color: aqua; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+            gap: 23px;
+            margin: 34px;
+            font-family: sans-serif;
+        }
+        .first span{
+            font-size: 30px;
+        }
+        .btn{
+            background-color: #00b6d1;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            color: white;
+        }
+        .flex{
+            display: flex;
+        }
+        .small{
+            font-size: 12px;
+        }
+        .second{
+            max-width: 80vw;
+            margin: auto;
+           }
+        .green{
+            background-color: #5cb85c;
+        }
+        .item{
+            padding: 23px;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .item-lang{
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 23px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+        }
+        .download :nth-child(1){
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div> <img src="Screenshot from 2024-06-15 18-49-25.png\" alt=""></div>
+        <nav>
+            <!-- <div class="logo"> -->
+               
+            <!-- </div> -->
+            <div class="right">
+                <ul>
+                    <li><img src="Screenshot from 2024-06-15 18-49-25.png" alt=""></li>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About us</li>
+                    <li><img src="Screenshot from 2024-06-15 18-49-25.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+           <span>Download UltraEdit for Windows</span> 
+           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore iusto facilis est iste recusandae?</div>
+           <div><button class="btn">Download on MAC or LINK version</button></div>
+        </section>
+        <section class="second">
+            <div class="download">
+                <span>Download UltraEdit </span>
+                <span class="small">v2023.1(released 08/16/2023) |Hotfix</span>
+            </div>
+            <div class="grid">
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn green">Download 32 bit</button>
+                    <button class="btn blue">Download 64 bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn green">Download 32 bit</button>
+                    <button class="btn blue">Download 64 bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn green">Download 32 bit</button>
+                    <button class="btn blue">Download 64 bit</button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn green">Download 32 bit</button>
+                    <button class="btn blue">Download 64 bit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

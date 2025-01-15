@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 233px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            /* margin auto dalne pr centre me tbhi aayega if it is block element 
+            inline element ho to nhi hoga */
+            background-color: aquamarine;
+        }
+
+        .container {
+            min-height: 80vh;
+            border: 2px solid black;
+            box-sizing: border-box;
+            /* width: 233px; */
+            width: 80vw;
+            /* height: 80vh; */
+            margin: 23px auto;
+            font-size: 1em;
+            /* margin auto dalne pr centre me tbhi aayega if it is block element 
+            inline element ho to nhi hoga */
+            background-color: aquamarine;
+
+
+        }
+
+        .container p {
+            font-size: 1.5em;
+            /* this means 1.5 times the inherited font size of above container */
+            /* and font-size :2rem krte to html(upar vala style me hai) jo ki root hai uske 2 times hota font size */
+        }
+
+        /* jo chota hota hai height aur width me se wo hoga vmin n jo bada hoga wo hoga vmax */
+        .mycont {
+            box-sizing: border-box;
+            margin: auto 23px;
+            background-color: palevioletred;
+            color: navy;
+            font-size: 22px;
+            width: 50vmin;
+            border: 2px solid black;
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">This is the box</div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae iusto eum ipsa recusandae eveniet autem,
+            possimus, quibusdam impedit delectus facere nesciunt odit, dignissimos cupiditate culpa amet accusantium
+            assumenda hic ducimus sit vitae. Voluptate culpa expedita consequatur quibusdam assumenda explicabo natus
+            eum autem debitis aut consequuntur eveniet alias, quas vel quidem sint. Voluptate obcaecati in aliquam
+            dolores?lorem500
+        </p>
+    </div>
+
+    <div class="mycont">I am another container</div>
+</body>
+
+</html>

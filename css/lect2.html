@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selector */
+        div {
+            background-color: red;
+        }
+
+        /* class selector */
+        .red {
+            background-color: aquamarine;
+        }
+
+        #green {
+            background-color: blueviolet;
+        }
+
+        /* child selector --> div ke andar direct p hua to hi applicable hai nhi to nhi*/
+        div>p {
+            color: blue;
+            background-color: chartreuse;
+        }
+
+        /* descendant selector */
+        div p {
+            color: brown;
+            background-color: bisque;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color:green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main class="one"><p>I am first</p></main>
+    <div class="red">
+        <article>
+            <p>Yeahhh...i won the match</p>
+        </article>
+        I am a Div
+    </div>
+    <a href="https://www.google.com">Go to google</a>
+    <div id="green">
+        i am another div
+    </div>
+</body>
+
+</html>
